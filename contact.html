@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact | Charles</title>
+  <link rel="stylesheet" href="colors.css"> <!-- Use your actual CSS file -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+
+  <a href="index.html" class="back-btn" title="Back">
+    <i class="fas fa-chevron-left"></i>
+  </a>
+
+  <canvas id="snowfall"></canvas>
+
+
+  <div class="toggle-container">
+    <div class="toggle-btn" onclick="toggleDarkMode()">❄️</div>
+  </div>
+  <section id="contact">
+    <h1>Contact Me</h1>
+
+    
+
+    <!-- 📬 Contact Form -->
+    <div class="contact-form">
+      <h3>Send a Message</h3>
+      <form action="https://formspree.io/f/xnnzddwy" method="POST">
+        <label>
+          Your email:
+          <input type="email" name="email" required>
+        </label>
+        <label>
+          Your message:
+          <textarea name="message" required></textarea>
+        </label>
+        <!-- your other form fields go here -->
+        <button type="submit">Send</button>
+      </form>
+      <div class="social-links" style="margin-top:2rem; text-align:center;">
+        <a href="https://www.tiktok.com/@a.onn2?_t=ZS-8yJcBaIcqji&_r=1" target="_blank" title="TikTok" class="social-footer-link">
+          <i class="fab fa-tiktok"></i>
+        </a>
+        <a href="https://youtu.be/dQw4w9WgXcQ?si=dk1uhXLOcWeZZxtt" target="_blank" title="YouTube" class="social-footer-link">
+          <i class="fab fa-youtube"></i>
+        </a>
+        <a href="https://www.instagram.com/eywrung?igsh=MWZ0cW1tdGFldnIybg==" target="_blank" title="Instagram" class="social-footer-link">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.facebook.com/share/1DozdHnk5S/" target="_blank" title="Facebook" class="social-footer-link">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ❄️ Optional JS Snow -->
+  <script src="snow.js"></script>
+
+</body>
+</html>

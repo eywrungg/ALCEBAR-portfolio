@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Charles | Winter Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="colors.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+  <div id="intro">
+    <h1>Initializing: Charles's Portfolio</h1>
+  </div>
+
+  <canvas id="snowfall"></canvas>
+
+  <div class="toggle-container">
+    <div class="toggle-btn" onclick="toggleDarkMode()">❄️</div>
+  </div>
+
+
+  <section id="home" class="section active">
+    <div class="section-content">
+      <div class="hero">
+        <h1><strong>Charles Arone Alcebar</strong></h1>
+        <div class="typing-container">
+          <div class="typing">
+            <span id="typedText"></span><span class="cursor"></span>
+          </div>
+        </div>
+        <p>
+          I'm a passionate developer with a creative eye for design and a love for clean, functional digital experiences. Welcome to my winter-themed portfolio.
+        </p>
+
+        <!-- Updated Button Section -->
+      <div class="button-group">
+  <a href="contact.html" class="frost-button">Contact Me</a>
+  <a href="about.html" class="frost-button">Discover</a>
+</div>
+
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="social-footer">
+    <a href="https://www.linkedin.com/in/charles0202" target="_blank" title="LinkedIn">
+      <i class="fab fa-linkedin-in"></i>
+    </a>
+    <a href="https://github.com/eywrungg" target="_blank" title="GitHub">
+      <i class="fab fa-github"></i>
+    </a>
+    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=charesaronealcebar@email.com" target="_blank" title="Email">
+      <i class="fas fa-envelope"></i>
+    </a>
+  </footer>
+
+  <script src="snow.js"></script>
+</body>
+</html>

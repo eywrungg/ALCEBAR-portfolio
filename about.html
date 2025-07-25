@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About | Charles Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="colors.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+  
+  <canvas id="snowfall"></canvas>
+
+
+  <div class="toggle-container">
+    <div class="toggle-btn" onclick="toggleDarkMode()">❄️</div>
+  </div>
+  <nav>
+    <ul>
+      <a href="index.html" class="back-btn" title="Back">
+        <i class="fas fa-chevron-left "></i>
+      </a>
+    </ul>
+  </nav>
+
+  <section id="about" class="section active">
+    <div class="about-container">
+      <!-- Left Sidebar (Fixed) -->
+      <div class="about-sidebar">
+        <h1>ABOUT ME</h1>
+        <h2>My Profile</h2>
+        <!-- Add below your <h2> -->
+<div class="social-hub">
+  <a href="https://github.com/eywrungg"target="_blank"
+   class="social-icon" title="GitHub"><i class="fab fa-github"></i></a>
+  <a href="https://www.linkedin.com/in/charles0202"target="_blank" class="social-icon"
+   title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+   <a href="https://www.instagram.com/eywrung?igsh=MWZ0cW1tdGFldnIybg=="target="_blank"class= "social-icon" title="Instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+</div>
+      </div>
+
+<div class="about-right">
+  <!-- Profile Header -->
+  <div class="profile-header">
+    <img src="assets/prof.jpeg" alt="Charles Alcebar" class="profile-img">
+    <div class="profile-info">
+      <h2>Charles Arone Alcebar</h2>
+      <p>Bachelor of Science in Information Technology</p>
+    </div>
+  </div>
+
+  <!-- Personal Details Section -->
+  <div class="details-section">
+    <div class="personal-details">
+      <h3>PERSONAL DETAILS</h3>
+      <ul class="detail-list">
+        <li><strong>Age:</strong> 20</li>
+        <li><strong>Birthdate:</strong> February 2, 2005</li>
+        <li><strong>Phone:</strong> 09216470705</li>
+        <li><strong>Email:</strong> Charlesaronealcebar@gmail.com</li>
+        <li><strong>Address:</strong> Bansalan, Davao del Sur, Philippines</li>
+      </ul>
+    </div>
+
+    <div class="interests">
+      <h3>INTERESTS</h3>
+    <div class="interest-cards">
+  <div class="interest-card" onclick="openModal('music')">
+    <img src="https://cdn-icons-png.flaticon.com/512/3669/3669483.png" alt="Music">
+    <span>Favorite Music</span>
+  </div>
+  
+  <div class="interest-card" onclick="openModal('photography')">
+    <img src="https://cdn-icons-png.flaticon.com/512/3342/3342137.png" alt="Photography">
+    <span>Photography</span>
+  </div>
+  
+  <div class="interest-card" onclick="openModal('cooking')">
+    <img src="https://cdn-icons-png.flaticon.com/512/3082/3082036.png" alt="Cooking">
+    <span>Cooking</span>
+  </div>
+  
+  <div class="interest-card" onclick="openModal('reading')">
+    <img src="https://cdn-icons-png.flaticon.com/512/2232/2232688.png" alt="Reading">
+    <span>Reading</span>
+  </div>
+  
+  <div class="interest-card" onclick="openModal('games')">
+    <img src="https://cdn-icons-png.flaticon.com/512/2910/2910788.png" alt="Games">
+    <span>Games</span>
+  </div>
+  
+  <div class="interest-card" onclick="openModal('technology')">
+    <img src="https://cdn-icons-png.flaticon.com/512/1326/1326406.png" alt="Technology">
+    <span>Technology</span>
+  </div>
+</div>
+      
+    </div>
+    
+    
+  </div>
+
+<!-- Add this below your existing sections -->
+<div class="skills-container">
+  <h3 class="section-title">SKILLS</h3>
+   <button class="view" onclick="openModal('projects')">
+      View Projects <i class="fas fa-arrow-right"></i>
+    </button>
+  
+  
+  <div class="skills-cards">
+    <!-- Card 1 -->
+    <div class="skill-card">
+      <div class="skill-header">
+        <i class="fas fa-code"></i>
+        <h4>Software Development</h4>
+      </div>
+      <p class="skill-description">
+        Building robust applications with clean architecture and efficient algorithms.
+      </p>
+      <div class="tools-used">
+        <span>TOOLS I USE</span>
+        <div class="tool-icons">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
+        </div>
+      </div>
+    </div>
+    
+
+    <!-- Card 2 -->
+    <div class="skill-card">
+      <div class="skill-header">
+        <i class="fas fa-globe"></i>
+        <h4>Website Development</h4>
+      </div>
+      <p class="skill-description">
+        Creating responsive, user-friendly websites with modern frameworks and technologies.
+      </p>
+      <div class="tools-used">
+        <span>TOOLS I USE</span>
+        <div class="tool-icons">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React">
+        </div>
+      </div>
+      
+    </div>
+    
+    
+  </div>
+<!-- Add this where you want the education section -->
+<h3 class="section-title" >EDUCATION</h3>
+
+<div class="education-section">
+  <!-- Elementary School -->
+  <div class="education-item">
+    <div class="education-logo">
+      <img src="assets/ban.jpg" alt="Bansalan Central Elementary School">
+    </div>
+    <div class="education-info">
+      <h4>Bansalan Central Elementary School</h4>
+      <p class="education-period">2009 - 2015</p>
+      <p class="education-description">Completed elementary education with honors. Active participant in school activities and competitions.</p>
+    </div>
+  </div>
+  
+  <!-- High School -->
+  <div class="education-item">
+    <div class="education-logo">
+      <img src="assets/naz.jpg" alt="Nazareth High School">
+    </div>
+    <div class="education-info">
+      <h4>Nazareth High School</h4>
+      <p class="education-period">2015 - 2022</p>
+      <p class="education-description">Specialized in STEM track. Won several academic and editing competitions.</p>
+    </div>
+  </div>
+  
+  <!-- College -->
+  <div class="education-item">
+    <div class="education-logo">
+      <img src="assets/college.jpg" alt="St. Mary's College of Bansalan">
+    </div>
+    <div class="education-info">
+      <h4>St. Mary's College of Bansalan</h4>
+      <p class="education-period">2023 - Present</p>
+      <p class="education-description">Currently pursuing Bachelor of Science in Information Technology. Dean's Lister. Project Head for Capstone Development.</p>
+    </div>
+  </div>
+</div>
+
+      </div>
+    </div>
+
+ 
+<!-- Photography Modal -->
+<div class="modal" id="photography-modal">
+  <div class="modal-content styled-modal">
+    <span class="close-btn" onclick="closeModal('photography')">&times;</span>
+    <h2 class="animated-title">Photography</h2>
+    <div class="modal-scroll">
+      <ul class="list-with-icons">
+        <li><img src="https://cdn-icons-png.flaticon.com/128/3342/3342137.png"><strong>Nature Photography:</strong> Capturing the beauty of landscapes and wildlife.</li>
+        <li><img src="https://cdn-icons-png.flaticon.com/128/3342/3342383.png"><strong>Animal Photography:</strong> Documenting everyday life of wild.</li>
+        <li><img src="https://cdn-icons-png.flaticon.com/128/3342/3342391.png"><strong>Sky Photography:</strong> Creating compelling character studies.</li>
+      </ul>
+      <p class="modal-note">Photography helps me see the world differently and appreciate details in design.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Cooking Modal -->
+<div class="modal" id="cooking-modal">
+  <div class="modal-content styled-modal">
+    <span class="close-btn" onclick="closeModal('cooking')">&times;</span>
+    <h2 class="animated-title">Video Editing</h2>
+    <div class="modal-scroll">
+      <ul class="list-with-icons">
+        <li><img src="https://cdn-icons-png.flaticon.com/128/3082/3082036.png"><strong>Capcut Template maker:</strong> Template maker for everyone.</li>
+        <li><img src="https://cdn-icons-png.flaticon.com/128/3082/3082050.png"><strong>Alight Motion:</strong> It all started in here</li>
+        <li><img src="https://cdn-icons-png.flaticon.com/128/3082/3082055.png"><strong>Loves Transitions:</strong> Trying fusion new techniques.</li>
+      </ul>
+      <p class="modal-note">Video editing is like coding it requires precision, creativity, and sometimes happy accidents lead to the best results."!</p>
+    </div>
+  </div>
+</div>
+
+<!-- Reading Modal -->
+<div class="modal" id="reading-modal">
+  <div class="modal-content styled-modal">
+    <span class="close-btn" onclick="closeModal('reading')">&times;</span>
+    <h2 class="animated-title">Reading</h2>
+    <div class="modal-scroll">
+      <ul class="list-with-icons">
+        <li><img src="https://cdn-icons-png.flaticon.com/128/2232/2232688.png"><strong>Webtoons:</strong> Love to read specially when magic man translate 😉.</li>
+        <li><img src="https://cdn-icons-png.flaticon.com/128/2232/2232777.png"><strong>Motivational Books:</strong> Exploring worlds and ideas.</li>
+        <li><img src="https://cdn-icons-png.flaticon.com/128/2232/2232779.png"><strong>Self-Improvement:</strong> Growing personally and professionally.</li>
+      </ul>
+      <p class="modal-note">Reading expands my knowledge and inspires creative solutions to problems.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Technology Modal -->
+<div class="modal" id="technology-modal">
+  <div class="modal-content styled-modal">
+    <span class="close-btn" onclick="closeModal('technology')">&times;</span>
+    <h2 class="animated-title">Technology</h2>
+    <div class="modal-scroll">
+      <ul class="list-with-icons">
+        <li><img src="https://cdn-icons-png.flaticon.com/128/1326/1326406.png"><strong>Emerging Tech:</strong> Following AI, blockchain, and quantum computing.</li>
+        <li><img src="https://cdn-icons-png.flaticon.com/128/1326/1326416.png"><strong>Gadgets:</strong> Exploring new devices and their capabilities.</li>
+        <li><img src="https://cdn-icons-png.flaticon.com/128/1326/1326414.png"><strong>Tech History:</strong> Understanding how we got to where we are.</li>
+      </ul>
+      <p class="modal-note">Technology fascinates me because it's constantly evolving and reshaping our world.</p>
+    </div>
+  </div>
+</div>
+
+
+    <!-- Projects Modal -->
+    <div class="modal" id="projects-modal">
+      <div class="modal-content styled-modal">
+        <span class="close-btn" onclick="closeModal('projects')">&times;</span>
+        <h2 class="animated-title">Projects</h2>
+        <div class="modal-scroll projects-grid">
+
+
+          <div class="project-card sparkle current">
+            <h3>Portfolio <span class="badge-current">Current Project</span></h3>
+            <p>Browser-based real-time code editor with live preview...</p>
+            <div class="tech"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Favorite Music Modal -->
+    <div class="modal" id="music-modal">
+      <div class="modal-content styled-modal">
+        <span class="close-btn" onclick="closeModal('music')">&times;</span>
+        <h2 class="animated-title">Favorite Music</h2>
+       <div class="modal-scroll">
+  <ul class="list-with-icons">
+    <li>
+      <img src="https://cdn-icons-png.flaticon.com/128/727/727245.png" alt="Pop Music icon">
+      <strong>Pop Music:</strong> Calm focus while coding.
+    </li>
+    <li>
+      <img src="https://cdn-icons-png.flaticon.com/128/727/727218.png" alt="R&B icon">
+      <strong>R&B:</strong> Night coding & pixel vibes.
+    </li>
+    <li>
+      <img src="https://cdn-icons-png.flaticon.com/128/727/727240.png" alt="EDM icon">
+      <strong>EDM:</strong> Uplifting grind music.
+    </li>
+    <li>
+      <img src="https://cdn-icons-png.flaticon.com/128/727/727232.png" alt="OPM icon">
+      <strong>OPM:</strong> Hollow Knight, Celeste, Nier — inspiring and immersive.
+    </li>
+  </ul>
+  <p class="modal-note">Music powers my workflow and creative state — headphones on, world off. 🎧</p>
+</div>
+
+      </div>
+    </div>
+
+    <!-- Favorite Games Modal -->
+    <div class="modal" id="games-modal">
+      <div class="modal-content styled-modal">
+        <span class="close-btn" onclick="closeModal('games')">&times;</span>
+        <h2 class="animated-title">Favorite Games</h2>
+        <div class="modal-scroll">
+          <ul class="list-with-icons">
+            <li><img src="assets/growtopia.jpg"><strong>Growtopia:</strong> Endless creativity and social sandbox chaos.</li>
+            <li><img src="assets/mlbb.jpg"><strong>Mobile Legends: Bang Bang (MLBB):</strong> Fast-paced MOBA fun, teamwork and strategy.</li>
+            <li><img src="assets/stri.jpg"><strong>Strinova:</strong> A journey into space with innovation at its core.</li>
+            <li><img src="assets/codm.jpg"><strong>Call of duty Mobile:</strong> Fps mobile shooting game.</li>
+          </ul>
+          <p class="modal-note">These games spark creativity, logic, and storytelling in my design process.</p>
+        </div>
+      </div>
+    </div>
+    
+  </section>
+
+  <script src="snow.js"></script>
+<script>
+  // Sound effect for close button
+  const closeSound = new Audio('assets/sound.mp3');
+  closeSound.volume = 0.5; // Set volume slightly under middle
+  function playCloseSound() {
+    closeSound.currentTime = 0;
+    closeSound.play();
+  }
+
+  // Patch all close buttons to play sound
+  document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('.close-btn').forEach(function(btn) {
+      btn.addEventListener('click', playCloseSound);
+    });
+  });
+</script>
+
+</body>
+</html>
